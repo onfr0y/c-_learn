@@ -1,16 +1,25 @@
 #include <iostream>
+#include <vector>
+
 
 // TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+void printMyNumbers(int num) {
+
+    std::cout << "This is my Number: " << num << '\n';
+}
+
 
 int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the <b>lang</b> variable name to see how CLion can help you rename it.
-    int age = 21;
-    int year = 2024;
-    int days = 7.5;
+    printMyNumbers( 300);
+    int energy = 100;
+    while (energy > 0) {
+        std::cout << "Still running..." << std::endl;
+        energy--;
+    }
 
-    std::cout << days << '\n';
-    std::cout << year << '\n';
-
-
-
+    int choice;
+    do {
+        std::cout << "Enter 0 to exit:";
+        std::cin >> choice;
+    } while (choice != 0);
 }
