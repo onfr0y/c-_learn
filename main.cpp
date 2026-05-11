@@ -60,12 +60,45 @@ int main() {
 
     // number %2 == 0 ? std::cout << "ODD" : std::cout << "EVEN";
 
-    bool hungry = false;
+    // bool hungry = false;
 
-    hungry ? std::cout << "good job, boiii." : std::cout << "Go eat, you cunt";
+    // hungry ? std::cout << "good job, boiii." : std::cout << "Go eat, you cunt";
+
+    // logical operator
+
+    // int temp;
+
+    // std::cout << "Enter your room temperature: ";
+    // std::cin >> temp;
+
+    // std::cout << "your room temperature is " << temp << " celsius" << '\n';
 
 
+   // if (temp > 0 && temp < 30) {
+       // std::cout << "The temperature is good";
+   // } else {
+       // std::cout << "The temperature is not good";
+   // }
+
+
+    // std:: string name;
+
+    // std::cout << "Enter your name ";
+    // std::getline(std::cin, name);
+
+    // if (name.length() > 12) {
+        // std::cout << "Your name is too long.";
+    // } else if (name.length() < 12) {
+        // std::cout << "Your name is nice.";
+    // } else if (name.empty()) {
+        // std::cout << "Your name is empty.";
+    // } else {
+        // std::cout << "undefined.";
+    // }
+
+    //array.
 
     return 0;
+
 
 }
