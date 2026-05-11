@@ -56,7 +56,9 @@ int main() {
 
     //grade >= 60 ? std::cout << "You pass": std::cout << "You fail!";
 
-    int number = 9;
+    int number = 2;
+
+    number %2 == 0 ? std::cout << "ODD" : std::cout << "EVEN";
 
 
 
