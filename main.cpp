@@ -132,6 +132,50 @@ int main() {
         // std::cout << "Freezing";
     // } else if (tem <=)
 
+
+// #include <iostream>
+// #include <iomanip> // For setprecision
+
+    // int main() {
+        // double temp[] = {25.5, 35.0, 3.0, 15.2, 100.0, -5.5, 0.0};
+
+        // Using size_t is better for sizes than int
+        // size_t arraySize = sizeof(temp) / sizeof(temp[0]);
+
+        // char choice;
+        // do {
+            // double sum = 0;
+            // std::cout << "\n--- Temperature Report ---\n";
+
+            // Use std::fixed for consistent decimal points
+            // std::cout << std::fixed << std::setprecision(1);
+
+            // for (size_t i = 0; i < arraySize; i++) {
+                // sum += temp[i];
+                // std::cout << "Day " << i + 1 << ": " << temp[i] << "°C - ";
+
+                // if (temp[i] <= 0) {
+                    // std::cout << "Freezing";
+                // } else if (temp[i] <= 20) {
+                    // std::cout << "Mild";
+                // } else {
+                    // std::cout << "Hot";
+                // }
+                // std::cout << "\n";
+            // }
+
+            // double average = sum / arraySize;
+            // std::cout << "\nAverage Temperature: " << average << "°C\n";
+
+            // std::cout << "\nWould you like to see the stats again? (y/n): ";
+            // std::cin >> choice;
+
+        // } while (choice == 'y' || choice == 'Y');
+
+        // return 0;
+    // }
+
+
    double temp[] = {23,22,3.2,43,15.5,43.8};
 
     std::cout << sizeof(temp[0]) << " bytes" << std::endl;
@@ -141,7 +185,12 @@ int main() {
 
 
     do {
-        
+        std::cout << "Here is the temperature report;" << '\n';
 
-    }
+        // declare variable
+        int day;
+
+
+
+    } while ()
 }
