@@ -97,30 +97,51 @@ int main() {
     // }
 
     //array.
-    std::string car []  = {"Corvette", "Mustang" ,"Camry"};
+    // std::string car []  = {"Corvette", "Mustang" ,"Camry"};
 
-    std::cout << car[0] << '\n';
-    std::cout << car[1] << '\n';
-    std::cout << car[2] << '\n';
+    // std::cout << car[0] << '\n';
+    // std::cout << car[1] << '\n';
+    // std::cout << car[2] << \n';
 
     // anoteher way to declare the array
 
-    double prices[4];
+    // double prices[4];
 
-    prices[0] = 1;
-    prices[1] = 2.4;
-    prices[2] = 32.43;
+    // prices[0] = 1;
+    // prices[1] = 2.4;
+    // prices[2] = 32.43;
 
-    std::cout << prices[0] << std::endl;
-    std::cout << prices[1] << std::endl;
-    std::cout << prices[2] << std::endl;
+    // std::cout << prices[0] << std::endl;
+    // std::cout << prices[1] << std::endl;
+    // std::cout << prices[2] << std::endl;
 
-    // to determines the size of
-
-    std::cout << sizeof(prices[0]) << " bytes" << std::endl;
-    
-
-    return 0;
+    // to determines the size of,
 
 
+    // double temp[7];
+    // temp[0] = 25;
+    // temp[1] = 35;
+    // temp[2] = 3;
+    // temp[4] = 100;
+    // temp[6] = 0;
+
+    // for i each character in the c
+
+    // if else statement for the interaction
+    // if (temp <= 0) {
+        // std::cout << "Freezing";
+    // } else if (tem <=)
+
+   double temp[] = {23,22,3.2,43,15.5,43.8};
+
+    std::cout << sizeof(temp[0]) << " bytes" << std::endl;
+    std::cout << sizeof(temp[1]) << " bytes" << std::endl;
+
+    int arraySize = sizeof(temp) / sizeof(temp[0]);
+
+
+    do {
+        
+
+    }
 }
