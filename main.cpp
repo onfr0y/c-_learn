@@ -8,7 +8,7 @@
 
 int main() {
 
-    int age;
+    // int age;
 
     /*int age;
 
@@ -97,6 +97,28 @@ int main() {
     // }
 
     //array.
+    std::string car []  = {"Corvette", "Mustang" ,"Camry"};
+
+    std::cout << car[0] << '\n';
+    std::cout << car[1] << '\n';
+    std::cout << car[2] << '\n';
+
+    // anoteher way to declare the array
+
+    double prices[4];
+
+    prices[0] = 1;
+    prices[1] = 2.4;
+    prices[2] = 32.43;
+
+    std::cout << prices[0] << std::endl;
+    std::cout << prices[1] << std::endl;
+    std::cout << prices[2] << std::endl;
+
+    // to determines the size of
+
+    std::cout << sizeof(prices[0]) << " bytes" << std::endl;
+    
 
     return 0;
 
