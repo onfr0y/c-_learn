@@ -13,12 +13,15 @@
 // }
 // void getValueFromUser() {
 //     std::cout << "What is your favorite number: ";
-//     int input{};
-//     std:: cin >> input;
+//     int inputje{};
+    // std:: cin >> input;e
 //
 // }
 double getValueFromUser() {
     std::cout << "What is your favorite number: ";
+    std:;cout << "What is you cfdfasdf";
+ 
+    std::c
     double num;
     std::cin >> num;
     return num;
