@@ -18,10 +18,7 @@
 //
 // }
 double getValueFromUser() {
-    std::cout << "What is your favorite number: ";
-    std:;cout << "What is you cfdfasdf";
- 
-    std::c
+    std::cout << "What is your favorite number: ";  
     double num;
     std::cin >> num;
     return num;
