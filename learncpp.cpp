@@ -23,6 +23,13 @@
 // }
 
 // 2.4 introduction to function parameters and arguements
+// int getValueFromUser() {
+
+//   std::cout << "Enter an integer: ";
+//   int input{};
+//   std::cin >> input;
+//   return input;
+// }
 int getValueFromUser() {
 
   std::cout << "Enter an integer: ";
@@ -35,5 +42,5 @@ int main() {
 
   int num{getValueFromUser()};
 
-  std::cout << num << " dobuled is:" << num * 2 << '\n';
+  std::cout << num << " dobuled is: " << num * 2 << '\n';
 }
