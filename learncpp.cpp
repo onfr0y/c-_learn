@@ -38,9 +38,27 @@ int getValueFromUser() {
   return input;
 }
 
-int main() {
+// int main() {
 
+// int num{getValueFromUser()};
+
+// std::cout << num << " dobuled is: " << num * 2 << '\n';
+// }
+
+// if we want it -- output line -- into its own function
+
+void printDouble() {
+
+  // int num{getValueFromUser()};
   int num{getValueFromUser()};
 
   std::cout << num << " dobuled is: " << num * 2 << '\n';
+}
+
+int main() {
+  int num{getValueFromUser()};
+
+  printDouble();
+
+  return 0;
 }
