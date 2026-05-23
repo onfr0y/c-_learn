@@ -29,14 +29,7 @@
 //   int input{};
 //   std::cin >> input;
 //   return input;
-// }
-int getValueFromUser() {
-
-  std::cout << "Enter an integer: ";
-  int input{};
-  std::cin >> input;
-  return input;
-}
+// // }
 
 // int main() {
 
@@ -47,18 +40,33 @@ int getValueFromUser() {
 
 // if we want it -- output line -- into its own function
 
-void printDouble() {
+// void printDouble () {
 
-  // int num{getValueFromUser()};
-  int num{getValueFromUser()};
+//   int num{getValueFromUser()};
 
-  std::cout << num << " dobuled is: " << num * 2 << '\n';
+//   std::cout << num << " dobuled is: " << num * 2 << '\n';
+// }
+
+// int main () {
+//   int num {getValueFromUser()};
+
+//   printDouble();
+// }
+
+// 2.5 -- introduction to local scope
+
+int add(int x, int y) {
+  int z{x + y};
+
+  return z;
 }
 
-int main() {
-  int num{getValueFromUser()};
+void doSomething() { std::cout << "Hello \n"; }
 
-  printDouble();
+int main() {
+  int x{0};
+
+  doSomething();
 
   return 0;
 }
