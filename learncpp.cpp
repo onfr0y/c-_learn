@@ -55,18 +55,30 @@
 
 // 2.5 -- introduction to local scope
 
-int add(int x, int y) {
-  int z{x + y};
+// int add(int x, int y)
+//  {
+//   int z{x + y};
 
-  return z;
-}
+//   return z;
+// }
 
-void doSomething() { std::cout << "Hello \n"; }
+// void doSomething() { std::cout << "Hello \n"; }
+
+// int main() {
+//   int x{0};
+
+//   doSomething();
+
+//   return 0;
+// }
+
+// 2.7 -- forward declarations and definitions
+int add(int x, int y);
 
 int main() {
-  int x{0};
-
-  doSomething();
-
+  std::cout << "The sum of 3 & 4 is: " << add(3, 4) << '\n';
   return 0;
 }
+
+int add(int x, int y) { return x + y; }
+// it gonna be error so we need to fix by this; forward declaration;
