@@ -8,10 +8,29 @@
 // }
 
 // 13.2 Unscoped enumerations
+
+// using Colour = int;
+// constexpr Colour red{0};
+// // constexpr Colour green{1};
+// constexpr Colour blue{2};
+// using Colour = int;
+// constexpr Colour red{0};
+// constexpr Colour green{1};
+// constexpr Colour blue{2};
+
+// Define an unscoped enumeration named Colour
+enum Colour {
+  red = -2,
+  green,
+  blue,
+};
+
 int main() {
 
-  int appleColour{0};
-  int shirtColour{1};
+  //   Colour appleColour{red};
+  //   Colour shirtColour{green};
 
+  Colour shirt{red};
+  std::cout << "Your shirt is " << shirt << '\n';
   return 0;
 }
