@@ -20,17 +20,44 @@
 
 // Define an unscoped enumeration named Colour
 enum Colour {
-  red = -2,
+  red,
   green,
   blue,
 };
+
+enum Pet {
+  cat,
+  dog,
+  pig,
+  backpack
+
+};
+
+constexpr std::string_view getColourName(Colour colour) {
+  switch (colour) {
+  case red:
+    return "red";
+  case green:
+    return "green";
+  case blue:
+    return "blue";
+  }
+}
+
+constexpr std;:string_view getPetName(Pet pet) {
+
+  swtich(pet pet) {
+  case cat:
+    return "cat";
+  }
+}
 
 int main() {
 
   //   Colour appleColour{red};
   //   Colour shirtColour{green};
+  constexpr constexpr Colour shirt{blue};
 
-  Colour shirt{red};
-  std::cout << "Your shirt is " << shirt << '\n';
+  std::cout << "Your shirt is " << getColourName(shirt) << '\n';
   return 0;
 }
