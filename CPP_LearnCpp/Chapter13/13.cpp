@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string_view>
 
 // using Length = int;
 // int main() {
@@ -19,44 +20,66 @@
 // constexpr Colour blue{2};
 
 // Define an unscoped enumeration named Colour
-enum Colour {
-  red,
-  green,
-  blue,
-};
+// enum Colour {
+//   red,
+//   green,
+//   blue,
+// };
 
-enum Pet {
-  cat,
-  dog,
-  pig,
-  backpack
+// enum Pet {
+//   cat,
+//   dog,
+//   pig,
+//   backpack
 
-};
+// };
+
+// constexpr std::string_view getColourName(Colour colour) {
+//   switch (colour) {
+//   case red:
+//     return "red";
+//   case green:
+//     return "green";
+//   case blue:
+//     return "blue";
+//   }
+// }
+
+// constexpr std::string_view getPetName(Pet pet) {
+
+//   swtich(pet pet) {
+//   case cat:
+//     return "cat";
+//   }
+// }
+
+// int main() {
+
+//   //   Colour appleColour{red};
+//   //   Colour shirtColour{green};
+//   constexpr constexpr Colour shirt{blue};
+
+//   std::cout << "Your shirt is " << getColourName(shirt) << '\n';
+//   return 0;
+// }
+
+enum Colour { black, red, blue };
 
 constexpr std::string_view getColourName(Colour colour) {
   switch (colour) {
+  case black:
+    return "black";
   case red:
     return "red";
-  case green:
-    return "green";
   case blue:
     return "blue";
-  }
-}
-
-constexpr std;:string_view getPetName(Pet pet) {
-
-  swtich(pet pet) {
-  case cat:
-    return "cat";
+  default:
+    return "???";
   }
 }
 
 int main() {
-
-  //   Colour appleColour{red};
-  //   Colour shirtColour{green};
-  constexpr constexpr Colour shirt{blue};
+  constexpr Colour shirt{blue};
 
   std::cout << "Your shirt is " << getColourName(shirt) << '\n';
   return 0;
