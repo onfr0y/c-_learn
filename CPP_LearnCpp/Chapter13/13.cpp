@@ -65,26 +65,52 @@
 
 enum Colour { black, red, blue, brown, velvet};
 
-constexpr std::string_view getColourName(Colour colour) {
-  switch ( colour) {
-  case black:
-    return "black";
-  case red:
-    return "red";
-  case blue:
-    return "blue";
-  case brown:
-    return "brown";
-  case velvet:
-    return "velvet";
+enum Pet {
+  cat, 
+  dog,
+  pig,
+  whale
+};
+// constexpr std::string_view getColourName(Colour colour) {
+//   switch ( colour) {
+//   case black:
+//     return "black";
+//   case red:
+//     return "red";
+//   case blue:
+//     return "blue";
+//   case brown:
+//     return "brown";
+//   case velvet:
+//     return "velvet";
+//   default:
+//     return "???"; 
+//   }
+// }
+constexpr std::string_view getpetName(Pet pet) {
+  switch (pet) {
+  case cat:
+    return "cat";
+  case dog:
+    return "dog";
+  case pig:
+    return "pig";
+  case whale:
+    return "whale";
   default:
-    return "???"; 
+    return "???";
   }
 }
 
 int main() {
-  constexpr Colour shirt{blue};
+  std::cout << "enter a pet (0 = cat, 1 = dog, 2 = pig, 3 = whale): ";
+  int input{};
+  std::cin >> input;
 
-  std::cout << "Your shirt is " << getColourName(shirt) << '\n';
-  return 0;
+  if (input < 0 || input > 3) {
+    std::cout << "You entered an invalid pet \n";
+  } else {
+    Pet pet{static_cast<Pet>(input)};
+    std::cout << "You entered: " << getpetName(pet) << '\n';
+  }
 }
