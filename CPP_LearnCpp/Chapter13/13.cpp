@@ -60,21 +60,25 @@
 //   constexpr constexpr Colour shirt{blue};
 
 //   std::cout << "Your shirt is " << getColourName(shirt) << '\n';
-//   return 0;
+// /   return 0 
 // }
 
-enum Colour { black, red, blue };
+enum Colour { black, red, blue, brown, velvet};
 
 constexpr std::string_view getColourName(Colour colour) {
-  switch (colour) {
+  switch ( colour) {
   case black:
     return "black";
   case red:
     return "red";
   case blue:
     return "blue";
+  case brown:
+    return "brown";
+  case velvet:
+    return "velvet";
   default:
-    return "???";
+    return "???"; 
   }
 }
 

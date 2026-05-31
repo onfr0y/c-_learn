@@ -2,18 +2,18 @@
 #include <iostream>
 #include <string>
 
-// A simple class definition
+
 class MyClass {
 public:
   int myNum;
   std::string myString;
-};
+ ;
 
 int main() {
-  // Instantiating an object of MyClass
+  
   MyClass myObj;
 
-  // Setting the attributes
+  
   myObj.myNum = 15;
   myObj.myString = "Some text";
 
